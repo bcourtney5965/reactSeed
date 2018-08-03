@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import * as _ from 'lodash';
+import './style.scss';
+
 
 export default class Babel extends Component {
   constructor(props) {
@@ -192,7 +194,7 @@ export default class Babel extends Component {
 
   render() {
     return (
-      <div>
+      <div className="DottedBox">
         Hello {this.props.name}
         <div className={this.defaultParams() ? '' : 'babel-error'}>Default parameters work: {this.defaultParams().toString()}</div>
         <div className={this.restParams() ? '' : 'babel-error'}>Rest parameters work: {this.restParams().toString()}</div>
