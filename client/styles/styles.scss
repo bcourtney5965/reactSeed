@@ -1,14 +1,37 @@
-/* **DIRECTORIES**
+/* **DIRECTORIES** */
 
-/* ABSTRACTS/ */
 @import 'helpers/variables';
+/*
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
 
-vendors/
-base/
-layout/
-components/
-pages/
-themes/*/
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+*/
+@import 'base/normalize';
+/*
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+*/
 
 div {
   color: green;
