@@ -4,12 +4,14 @@
   "description": "Node, React, Parcel project seed",
   "main": "index.js",
   "scripts": {
+    "build-css": "node-sass --watch client/styles -o client",
     "start": "parcel client/index.html",
     "test": "jest"
   },
   "author": "Brandon Courtney",
   "license": "ISC",
   "dependencies": {
+    "helpers": "^0.0.6",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
     "react-dom": "^16.4.0",

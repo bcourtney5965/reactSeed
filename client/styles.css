@@ -1,7 +1,13 @@
+/* abstracts */
+/* DIRECTORIES
+vendors/
+base/
+layout/
+components/
+pages/
+themes/*/
 div {
-  color: green;
-}
+  color: green; }
 
 .babel-error {
-  background-color: red;
-}
+  background-color: #FF0000; }

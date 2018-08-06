@@ -1,0 +1,19 @@
+/* **DIRECTORIES**
+
+/* ABSTRACTS/ */
+@import 'helpers/variables';
+
+vendors/
+base/
+layout/
+components/
+pages/
+themes/*/
+
+div {
+  color: green;
+}
+
+.babel-error {
+  background-color: $primary-color;
+}
