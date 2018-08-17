@@ -1,0 +1,5 @@
+@import "./_variables";
+
+@mixin my-color-mixin($some-color) {
+  color: $some-color;
+}

@@ -1,11 +1,12 @@
 /* **DIRECTORIES** */
 
 @import 'helpers/variables';
-/*
 @import 'helpers/functions';
 @import 'helpers/mixins';
 @import 'helpers/placeholders';
+@import 'helpers/colors';
 
+/*
 @import 'vendors/bootstrap';
 @import 'vendors/jquery-ui';
 
@@ -15,7 +16,9 @@
 @import 'base/typography';
 
 @import 'layout/navigation';
+*/
 @import 'layout/grid';
+/*
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
@@ -34,9 +37,9 @@
 */
 
 div {
-  color: green;
+  @include my-color-mixin($green);
 }
 
 .babel-error {
-  background-color: $primary-color;
+  background-color: $background-color;
 }

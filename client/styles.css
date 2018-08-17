@@ -1,9 +1,41 @@
 /* **DIRECTORIES** */
 /*
-@import 'helpers/functions';
-@import 'helpers/mixins';
-@import 'helpers/placeholders';
+http://thesassway.com/intermediate/understanding-placeholder-selectors
 
+%icon {
+  transition: background-color ease .2s;
+  margin: 0 .5em;
+}
+
+.error-icon {
+  @extend %icon;
+  // error specific styles...
+}
+
+.info-icon {
+  @extend %icon;
+  // info specific styles...
+}
+
+
+
+// The Following CSS is generated:
+
+.error-icon, .info-icon {
+  transition: background-color ease .2s;
+  margin: 0 .5em;
+}
+
+.error-icon {
+  // error specific styles...
+}
+
+.info-icon {
+  // info specific styles...
+}
+
+*/
+/*
 @import 'vendors/bootstrap';
 @import 'vendors/jquery-ui';
 
@@ -311,7 +343,24 @@ template {
 @import 'base/typography';
 
 @import 'layout/navigation';
-@import 'layout/grid';
+*/
+* {
+  box-sizing: border-box; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px; }
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center; }
+
+/*
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
@@ -329,7 +378,7 @@ template {
 @import 'themes/admin';
 */
 div {
-  color: green; }
+  color: #437a4f; }
 
 .babel-error {
-  background-color: #FF0000; }
+  background-color: red; }

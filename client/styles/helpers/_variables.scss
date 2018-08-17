@@ -1,1 +1,4 @@
-$primary-color: #FF0000;
+@import "./colors";
+
+$text-color: $green;
+$background-color: $red;
