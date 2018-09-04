@@ -5,9 +5,9 @@ https://css-tricks.com/rems-ems/
 
 tl;dr:
 
-*/
 
-  /* Document level adjustments */
+
+  Document level adjustments
 html {
   font-size: 17px;
 }
@@ -18,7 +18,7 @@ html {
   html { font-size: 13px; }
 }
 
-/* Modules will scale with document */
+   Modules will scale with document
 .header {
   font-size: 1.5rem;
 }
@@ -29,7 +29,7 @@ html {
   font-size: 0.85rem;
 }
 
-/* Type will scale with modules */
+   Type will scale with modules
 h1 {
   font-size: 3em;
 }
@@ -39,3 +39,4 @@ h2 {
 h3 {
   font-size: 2em;
 }
+*/

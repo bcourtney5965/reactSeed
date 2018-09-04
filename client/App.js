@@ -14,7 +14,7 @@ const App = () => (
           <Link to="/babel">Babel</Link>
         </li>
         <li>
-          <Link to="/topics">Topics</Link>
+          <Link to="/topics">Subrouting example</Link>
         </li>
       </ul>
 

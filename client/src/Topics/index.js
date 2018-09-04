@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <h2>Subrouting example</h2>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>Rendering with React</Link>
