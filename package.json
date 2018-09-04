@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --watch client/styles -o client",
+    "start-server": "nodemon index.js",
     "start": "parcel client/index.html",
     "test": "jest"
   },
   "author": "Brandon Courtney",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "helpers": "^0.0.6",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
@@ -29,6 +31,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^23.1.0",
     "node-sass": "^4.9.2",
+    "nodemon": "^1.18.4",
     "parcel-bundler": "^1.8.1"
   }
 }
