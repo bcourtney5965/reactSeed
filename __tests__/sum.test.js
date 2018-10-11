@@ -1,5 +1,5 @@
 import React from 'react';
-import { sum, Foo } from './sum';
+import { sum, Foo } from '../sum';
 import Enzyme from 'enzyme';
 import { render } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
