@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import * as _ from 'lodash';
 import './style.scss';
-// import GeneralUtils from '../utils/GeneralUtils';
+import { test1 } from '../../../utils.js';
 import { connect } from 'react-redux';
-import { sampleAction } from '../../redux/actions/index';
+import { sampleAction } from '../../../redux/actions/index';
+import View from './view.js';
 
 class Home extends Component {
   constructor(props) {
@@ -12,20 +12,16 @@ class Home extends Component {
   }
 
   handleOnClick() {
-    console.log('scalloped potatoes:::::: inside handleOnClick');
+    console.log('Inside handleOnClick!');
     const { sampleAction } = this.props;
-    sampleAction('Lime Pie!');
+    sampleAction('Yes!');
   }
 
   render() {
-    const { value } = this.props;
+    test1();
     return (
-      <div className="DottedBoxHome">
-        <h2>
-          key:
-          {value}
-        </h2>
-        <button onClick={this.handleOnClick}>button</button>
+      <div>
+        <View {...this.props} handleOnClick={this.handleOnClick} />
       </div>
     );
   }
@@ -34,7 +30,6 @@ class Home extends Component {
 // give access to state from this component (access via props)
 /* istanbul ignore next */
 function mapStateToProps(state, ownProps) {
-  // let referenceObject = Object.assign({}, state.base.fetchedData, { formData: state.base.formData, tab: state.base.tab });
   return {
     value: state.key
   };
