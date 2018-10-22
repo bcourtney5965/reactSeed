@@ -10,7 +10,7 @@ class View extends Component {
   render() {
     const { value } = this.props;
     return (
-      <div className="DottedBoxHome">
+      <div className="BorderBoxHome">
         <h1>Utilize the "Home" directory as a template (cp -R Home NewComponent) and add a route to get started</h1>
         <h2>Redux is hooked up too, click the button below to test</h2>
         <p>Redux hooked up:::: {value}</p>

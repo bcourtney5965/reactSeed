@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { createStore } from 'redux';
-import Babel from './src/components/Babel/index.js';
 import Home from './src/pages/Home/index.js';
 import { Provider } from 'react-redux';
 import RootReducer from '../client/redux/reducers/baseReducer.js';

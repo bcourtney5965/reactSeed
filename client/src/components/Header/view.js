@@ -10,7 +10,7 @@ class View extends Component {
   render() {
     const { value } = this.props;
     return (
-      <ul>
+      <ul class={'BorderBoxHeader'}>
         <li>
           <Link to="/">Home</Link>
         </li>

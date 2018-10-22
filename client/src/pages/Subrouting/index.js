@@ -13,12 +13,6 @@ const Subrouting = ({ match }) => (
       <li>
         <Link to={`${match.url}/grid`}>Grid</Link>
       </li>
-      <li>
-        <Link to={`${match.url}/components`}>Components</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
     </ul>
 
     <Route path={`${match.url}/:topicId`} component={Topic} />
@@ -49,7 +43,7 @@ class GridSubroute extends Component {
 
   render() {
     return (
-      <div className="DottedBox">
+      <div className="BorderBoxSubrouting">
         <div>
           <h1>CSS3 Grid</h1>
           <div className="grid-container">
@@ -262,7 +256,7 @@ class Babel extends Component {
 
   render() {
     return (
-      <div className="DottedBox">
+      <div className="BorderBoxSubrouting">
         Hello {this.props.name}
         <div className={this.defaultParams() ? '' : 'babel-error'}>
           Default parameters work: {this.defaultParams().toString()}
