@@ -16,6 +16,7 @@
     "express": "^4.16.3",
     "helpers": "^0.0.6",
     "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
     "react": "15.x || 16.x",
     "react-dom": "^16.4.0",
     "react-emotion": "^9.2.12",

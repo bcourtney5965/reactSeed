@@ -4,6 +4,7 @@ import { test1 } from '../../../utils.js';
 import { connect } from 'react-redux';
 import { sampleAction } from '../../../redux/actions/index';
 import View from './view.js';
+import PropTypes from 'prop-types';
 
 class Home extends Component {
   constructor(props) {
@@ -26,6 +27,11 @@ class Home extends Component {
     );
   }
 }
+
+// https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+Home.propTypes = {
+  sampleAction: PropTypes.func.isRequired
+};
 
 // give access to state from this component (access via props)
 /* istanbul ignore next */

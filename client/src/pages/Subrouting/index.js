@@ -24,14 +24,14 @@ const Subrouting = ({ match }) => (
 
 const Topic = ({ match }) => (
   <div>
-    {console.log(`mashed potatoes:::::: match 2nd: `, match)}
+    {console.log(`:::::: match 2nd: `, match)}
     <h3>match.params.topicId: {match.params.topicId}</h3>
   </div>
 );
 
 const BabelSubroute = ({ match }) => (
   <div>
-    {console.log(`mashed potatoes:::::: match 2nd: `, match)}
+    {console.log(`:::::: match 2nd: `, match)}
     <Babel />
   </div>
 );
