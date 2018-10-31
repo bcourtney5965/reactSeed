@@ -8,7 +8,6 @@ class View extends Component {
   }
 
   render() {
-    const { value } = this.props;
     return (
       <ul className={'BorderBoxHeader'}>
         <li>

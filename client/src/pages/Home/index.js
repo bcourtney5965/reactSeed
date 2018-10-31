@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './style.scss';
-import { test1 } from '../../../utils.js';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { sampleAction } from '../../../redux/actions/index';
 import View from './view.js';
-import PropTypes from 'prop-types';
 
 class Home extends Component {
   constructor(props) {
@@ -19,7 +18,6 @@ class Home extends Component {
   }
 
   render() {
-    test1();
     return (
       <div>
         <View {...this.props} handleOnClick={this.handleOnClick} />
